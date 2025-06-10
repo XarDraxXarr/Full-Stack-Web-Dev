@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Weather App</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <header class="header">
+        <h1 class="title">🌤️ Weather App</h1>
+        <p class="subtitle">Get weather information for cities in any state</p>
+      </header>
+
+      <div class="search-section">
+        <div class="input-group">
+          <input
+            type="text"
+            id="stateInput"
+            placeholder="Enter state name (e.g., Mumbai, Dhaka)"
+            class="state-input"
+          />
+          <button id="searchBtn" class="search-btn">
+            <span class="btn-text">Search Weather</span>
+            <span class="btn-icon">🔍</span>
+          </button>
+        </div>
+      </div>
+
+      <div id="loadingSpinner" class="loading hidden">
+        <div class="spinner"></div>
+        <p>Fetching weather data...</p>
+      </div>
+
+      <div id="errorMessage" class="error hidden">
+        <p>❌ Unable to fetch weather data. Please try again.</p>
+      </div>
+
+      <div id="resultsContainer" class="results-container hidden">
+        <h2 class="results-title">Weather Results</h2>
+        <div id="weatherGrid" class="weather-grid"></div>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>

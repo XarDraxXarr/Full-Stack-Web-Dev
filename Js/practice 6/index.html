@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Programming Functions Collection</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Programming Functions Collection</h1>
+            <p>Interactive demonstrations of common programming functions</p>
+        </header>
+
+        <main>
+            <!-- Prime Number Checker -->
+            <section class="function-card">
+                <h2>1. Prime Number Checker</h2>
+                <div class="input-group">
+                    <input type="number" id="primeInput" placeholder="Enter a number">
+                    <button onclick="checkPrime()">Check Prime</button>
+                </div>
+                <div class="result" id="primeResult"></div>
+            </section>
+
+            <!-- Factorial Calculator -->
+            <section class="function-card">
+                <h2>2. Factorial Calculator</h2>
+                <div class="input-group">
+                    <input type="number" id="factorialInput" placeholder="Enter a number" min="0">
+                    <button onclick="calculateFactorial()">Calculate</button>
+                </div>
+                <div class="result" id="factorialResult"></div>
+            </section>
+
+            <!-- Even/Odd Checker -->
+            <section class="function-card">
+                <h2>3. Even/Odd Checker</h2>
+                <div class="input-group">
+                    <input type="number" id="evenOddInput" placeholder="Enter a number">
+                    <button onclick="checkEvenOdd()">Check</button>
+                </div>
+                <div class="result" id="evenOddResult"></div>
+            </section>
+
+            <!-- Vowel Counter -->
+            <section class="function-card">
+                <h2>4. Vowel Counter</h2>
+                <div class="input-group">
+                    <input type="text" id="vowelInput" placeholder="Enter a string">
+                    <button onclick="countVowels()">Count Vowels</button>
+                </div>
+                <div class="result" id="vowelResult"></div>
+            </section>
+
+            <!-- Palindrome Checker -->
+            <section class="function-card">
+                <h2>5. Palindrome Checker</h2>
+                <div class="input-group">
+                    <input type="text" id="palindromeInput" placeholder="Enter a string (e.g., madam)">
+                    <button onclick="checkPalindrome()">Check Palindrome</button>
+                </div>
+                <div class="result" id="palindromeResult"></div>
+            </section>
+
+            <!-- String Reverser -->
+            <section class="function-card">
+                <h2>6. String Reverser</h2>
+                <div class="input-group">
+                    <input type="text" id="reverseInput" placeholder="Enter a string">
+                    <button onclick="reverseString()">Reverse</button>
+                </div>
+                <div class="result" id="reverseResult"></div>
+            </section>
+
+            <!-- Leap Year Checker -->
+            <section class="function-card">
+                <h2>7. Leap Year Checker</h2>
+                <div class="input-group">
+                    <input type="number" id="leapYearInput" placeholder="Enter a year" min="1">
+                    <button onclick="checkLeapYear()">Check Leap Year</button>
+                </div>
+                <div class="result" id="leapYearResult"></div>
+            </section>
+
+            <!-- Fibonacci Generator -->
+            <section class="function-card">
+                <h2>8. Fibonacci Sequence Generator</h2>
+                <div class="input-group">
+                    <input type="number" id="fibonacciInput" placeholder="Enter number of terms" min="1">
+                    <button onclick="generateFibonacci()">Generate</button>
+                </div>
+                <div class="result" id="fibonacciResult"></div>
+            </section>
+
+            <!-- Variable Swapper -->
+            <section class="function-card">
+                <h2>9. Variable Swapper (Without Third Variable)</h2>
+                <div class="input-group">
+                    <input type="number" id="swapInput1" placeholder="First number">
+                    <input type="number" id="swapInput2" placeholder="Second number">
+                    <button onclick="swapVariables()">Swap</button>
+                </div>
+                <div class="result" id="swapResult"></div>
+            </section>
+        </main>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

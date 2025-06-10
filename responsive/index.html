@@ -1,0 +1,612 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Practice - Responsive Blog</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <header class="header">
+      <nav class="navbar">
+        <div class="name">Your Name</div>
+
+        <button class="hamburger" id="hamburger" aria-label="Toggle menu">
+          <span class="hamburger-line"></span>
+          <span class="hamburger-line"></span>
+          <span class="hamburger-line"></span>
+        </button>
+
+        <div class="menu" id="menu">
+          <div class="menu-item blog">
+            <span>Blog</span>
+          </div>
+          <div class="menu-item projects">
+            <span>Projects</span>
+          </div>
+          <div class="menu-item about">
+            <span>About</span>
+          </div>
+          <div class="menu-item newsletter">
+            <span>Newsletter</span>
+          </div>
+
+          <button
+            class="toggle-mode"
+            id="darkModeToggle"
+            aria-label="Toggle dark mode"
+          >
+            <svg
+              class="sun-icon"
+              width="24"
+              height="24"
+              viewBox="0 0 24 24"
+              fill="none"
+            >
+              <circle
+                cx="12"
+                cy="12"
+                r="4"
+                stroke="currentColor"
+                stroke-width="2"
+              />
+              <path
+                d="m12 2 0 2"
+                stroke="currentColor"
+                stroke-width="2"
+                stroke-linecap="round"
+              />
+              <path
+                d="m12 20 0 2"
+                stroke="currentColor"
+                stroke-width="2"
+                stroke-linecap="round"
+              />
+              <path
+                d="m4.93 4.93 1.41 1.41"
+                stroke="currentColor"
+                stroke-width="2"
+                stroke-linecap="round"
+              />
+              <path
+                d="m17.66 17.66 1.41 1.41"
+                stroke="currentColor"
+                stroke-width="2"
+                stroke-linecap="round"
+              />
+              <path
+                d="m2 12 2 0"
+                stroke="currentColor"
+                stroke-width="2"
+                stroke-linecap="round"
+              />
+              <path
+                d="m20 12 2 0"
+                stroke="currentColor"
+                stroke-width="2"
+                stroke-linecap="round"
+              />
+              <path
+                d="m6.34 17.66-1.41 1.41"
+                stroke="currentColor"
+                stroke-width="2"
+                stroke-linecap="round"
+              />
+              <path
+                d="m19.07 4.93-1.41 1.41"
+                stroke="currentColor"
+                stroke-width="2"
+                stroke-linecap="round"
+              />
+            </svg>
+            <svg
+              class="moon-icon"
+              width="24"
+              height="24"
+              viewBox="0 0 24 24"
+              fill="none"
+            >
+              <path
+                d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"
+                stroke="currentColor"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              />
+            </svg>
+          </button>
+        </div>
+      </nav>
+      <div class="container">
+        <h1 class="blog-title">THE BLOG</h1>
+      </div>
+    </header>
+
+    <div class="blog">
+      <section class="section">
+        <div class="container">
+          <h2 class="heading">Latest Posts</h2>
+          <div class="content">
+            <article class="blog-post-card featured">
+              <div
+                class="image"
+                style="
+                  background-image: url('/placeholder.svg?height=228&width=592');
+                "
+              ></div>
+              <div class="content">
+                <div class="heading-and-text">
+                  <div class="author">John Doe</div>
+                  <div class="heading-and-icon">
+                    <h3 class="heading">
+                      How to Build a Successful Blog in 2024
+                    </h3>
+                    <div class="icon-wrap">
+                      <svg
+                        class="arrow-up-right"
+                        width="24"
+                        height="24"
+                        viewBox="0 0 24 24"
+                        fill="none"
+                      >
+                        <path
+                          d="M7 17L17 7M17 7H7M17 7V17"
+                          stroke="currentColor"
+                          stroke-width="2"
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                        />
+                      </svg>
+                    </div>
+                  </div>
+                  <p class="supporting-text">
+                    Learn the essential strategies and techniques to create a
+                    successful blog that attracts readers and generates income.
+                  </p>
+                </div>
+                <div class="categories">
+                  <span class="badge purple">Design</span>
+                  <span class="badge blue">Research</span>
+                  <span class="badge pink">Presentation</span>
+                </div>
+              </div>
+            </article>
+
+            <div class="column">
+              <article class="blog-post-card horizontal">
+                <div
+                  class="image"
+                  style="
+                    background-image: url('/placeholder.svg?height=200&width=320');
+                  "
+                ></div>
+                <div class="content">
+                  <div class="heading-and-text">
+                    <div class="author">Jane Smith</div>
+                    <div class="heading-and-text">
+                      <h3 class="heading">10 Tips for Better Web Design</h3>
+                      <p class="supporting-text">
+                        Discover the fundamental principles that will help you
+                        create more effective and user-friendly websites.
+                      </p>
+                    </div>
+                  </div>
+                  <div class="categories">
+                    <span class="badge light-blue">Design</span>
+                    <span class="badge pink">Research</span>
+                  </div>
+                </div>
+              </article>
+
+              <article class="blog-post-card horizontal">
+                <div
+                  class="image"
+                  style="
+                    background-image: url('/placeholder.svg?height=200&width=320');
+                  "
+                ></div>
+                <div class="content">
+                  <div class="heading-and-text">
+                    <div class="author">Mike Johnson</div>
+                    <div class="heading-and-text">
+                      <h3 class="heading">The Future of Digital Marketing</h3>
+                      <p class="supporting-text">
+                        Explore emerging trends and technologies that are
+                        shaping the future of digital marketing strategies.
+                      </p>
+                    </div>
+                  </div>
+                  <div class="categories">
+                    <span class="badge green">Design</span>
+                    <span class="badge pink">Research</span>
+                  </div>
+                </div>
+              </article>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section">
+        <div class="container">
+          <div class="content">
+            <article class="blog-post-card large-featured">
+              <div
+                class="image"
+                style="
+                  background-image: url('/placeholder.svg?height=246&width=592');
+                "
+              ></div>
+              <div class="content">
+                <div class="heading-and-text">
+                  <div class="author">Sarah Wilson</div>
+                  <div class="heading-and-icon">
+                    <h3 class="heading">
+                      Complete Guide to Content Marketing Strategy
+                    </h3>
+                    <div class="icon-wrap">
+                      <svg
+                        class="arrow-up-right"
+                        width="24"
+                        height="24"
+                        viewBox="0 0 24 24"
+                        fill="none"
+                      >
+                        <path
+                          d="M7 17L17 7M17 7H7M17 7V17"
+                          stroke="currentColor"
+                          stroke-width="2"
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                        />
+                      </svg>
+                    </div>
+                  </div>
+                  <p class="supporting-text">
+                    Master the art of content marketing with this comprehensive
+                    guide covering strategy, creation, distribution, and
+                    measurement techniques that drive real business results.
+                  </p>
+                </div>
+                <div class="categories">
+                  <span class="badge purple">Design</span>
+                  <span class="badge pink">Research</span>
+                </div>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="section">
+        <div class="container">
+          <div class="heading-and-content">
+            <h2 class="heading">More Articles</h2>
+            <div class="content">
+              <div class="row">
+                <article class="blog-post-card">
+                  <div
+                    class="image"
+                    style="
+                      background-image: url('/placeholder.svg?height=240&width=384');
+                    "
+                  ></div>
+                  <div class="content">
+                    <div class="heading-and-text">
+                      <div class="author">Alex Chen</div>
+                      <div class="heading-and-icon">
+                        <h3 class="heading">UX Design Principles</h3>
+                        <div class="icon-wrap">
+                          <svg
+                            class="arrow-up-right"
+                            width="24"
+                            height="24"
+                            viewBox="0 0 24 24"
+                            fill="none"
+                          >
+                            <path
+                              d="M7 17L17 7M17 7H7M17 7V17"
+                              stroke="currentColor"
+                              stroke-width="2"
+                              stroke-linecap="round"
+                              stroke-linejoin="round"
+                            />
+                          </svg>
+                        </div>
+                      </div>
+                      <p class="supporting-text">
+                        Essential principles every UX designer should know to
+                        create intuitive user experiences.
+                      </p>
+                    </div>
+                    <div class="categories">
+                      <span class="badge purple">Leadership</span>
+                      <span class="badge gray">Management</span>
+                    </div>
+                  </div>
+                </article>
+
+                <article class="blog-post-card">
+                  <div
+                    class="image"
+                    style="
+                      background-image: url('/placeholder.svg?height=240&width=384');
+                    "
+                  ></div>
+                  <div class="content">
+                    <div class="heading-and-text">
+                      <div class="author">Emma Davis</div>
+                      <div class="heading-and-icon">
+                        <h3 class="heading">Mobile App Development</h3>
+                        <div class="icon-wrap">
+                          <svg
+                            class="arrow-up-right"
+                            width="24"
+                            height="24"
+                            viewBox="0 0 24 24"
+                            fill="none"
+                          >
+                            <path
+                              d="M7 17L17 7M17 7H7M17 7V17"
+                              stroke="currentColor"
+                              stroke-width="2"
+                              stroke-linecap="round"
+                              stroke-linejoin="round"
+                            />
+                          </svg>
+                        </div>
+                      </div>
+                      <p class="supporting-text">
+                        A comprehensive guide to building mobile applications
+                        from concept to deployment.
+                      </p>
+                    </div>
+                    <div class="categories">
+                      <span class="badge light-blue">Product</span>
+                      <span class="badge blue">Research</span>
+                      <span class="badge orange">Frameworks</span>
+                    </div>
+                  </div>
+                </article>
+
+                <article class="blog-post-card">
+                  <div
+                    class="image"
+                    style="
+                      background-image: url('/placeholder.svg?height=240&width=384');
+                    "
+                  ></div>
+                  <div class="content">
+                    <div class="heading-and-text">
+                      <div class="author">David Lee</div>
+                      <div class="heading-and-icon">
+                        <h3 class="heading">Data Analytics Fundamentals</h3>
+                        <div class="icon-wrap">
+                          <svg
+                            class="arrow-up-right"
+                            width="24"
+                            height="24"
+                            viewBox="0 0 24 24"
+                            fill="none"
+                          >
+                            <path
+                              d="M7 17L17 7M17 7H7M17 7V17"
+                              stroke="currentColor"
+                              stroke-width="2"
+                              stroke-linecap="round"
+                              stroke-linejoin="round"
+                            />
+                          </svg>
+                        </div>
+                      </div>
+                      <p class="supporting-text">
+                        Learn the basics of data analytics and how to derive
+                        insights from your data.
+                      </p>
+                    </div>
+                    <div class="categories">
+                      <span class="badge purple">Design</span>
+                      <span class="badge blue">Research</span>
+                    </div>
+                  </div>
+                </article>
+              </div>
+
+              <div class="row">
+                <article class="blog-post-card">
+                  <div
+                    class="image"
+                    style="
+                      background-image: url('/placeholder.svg?height=240&width=384');
+                    "
+                  ></div>
+                  <div class="content">
+                    <div class="heading-and-text">
+                      <div class="author">Lisa Wang</div>
+                      <div class="heading-and-icon">
+                        <h3 class="heading">
+                          Building Scalable Web Applications with Modern
+                          Frameworks
+                        </h3>
+                        <div class="icon-wrap">
+                          <svg
+                            class="arrow-up-right"
+                            width="24"
+                            height="24"
+                            viewBox="0 0 24 24"
+                            fill="none"
+                          >
+                            <path
+                              d="M7 17L17 7M17 7H7M17 7V17"
+                              stroke="currentColor"
+                              stroke-width="2"
+                              stroke-linecap="round"
+                              stroke-linejoin="round"
+                            />
+                          </svg>
+                        </div>
+                      </div>
+                      <p class="supporting-text">
+                        Explore modern frameworks and best practices for
+                        building scalable applications.
+                      </p>
+                    </div>
+                    <div class="categories">
+                      <span class="badge purple">Design</span>
+                      <span class="badge blue">Research</span>
+                    </div>
+                  </div>
+                </article>
+
+                <article class="blog-post-card">
+                  <div
+                    class="image"
+                    style="
+                      background-image: url('/placeholder.svg?height=240&width=384');
+                    "
+                  ></div>
+                  <div class="content">
+                    <div class="heading-and-text">
+                      <div class="author">Tom Brown</div>
+                      <div class="heading-and-icon">
+                        <h3 class="heading">
+                          Cybersecurity Best Practices for Small Businesses
+                        </h3>
+                        <div class="icon-wrap">
+                          <svg
+                            class="arrow-up-right"
+                            width="24"
+                            height="24"
+                            viewBox="0 0 24 24"
+                            fill="none"
+                          >
+                            <path
+                              d="M7 17L17 7M17 7H7M17 7V17"
+                              stroke="currentColor"
+                              stroke-width="2"
+                              stroke-linecap="round"
+                              stroke-linejoin="round"
+                            />
+                          </svg>
+                        </div>
+                      </div>
+                      <p class="supporting-text">
+                        Essential security measures every small business should
+                        implement to protect their data.
+                      </p>
+                    </div>
+                    <div class="categories">
+                      <span class="badge green">Software Development</span>
+                      <span class="badge pink">Tools</span>
+                      <span class="badge red">SaaS</span>
+                    </div>
+                  </div>
+                </article>
+
+                <article class="blog-post-card">
+                  <div
+                    class="image"
+                    style="
+                      background-image: url('/placeholder.svg?height=240&width=384');
+                    "
+                  ></div>
+                  <div class="content">
+                    <div class="heading-and-text">
+                      <div class="author">Rachel Green</div>
+                      <div class="heading-and-icon">
+                        <h3 class="heading">
+                          The Art of Technical Writing and Documentation
+                        </h3>
+                        <div class="icon-wrap">
+                          <svg
+                            class="arrow-up-right"
+                            width="24"
+                            height="24"
+                            viewBox="0 0 24 24"
+                            fill="none"
+                          >
+                            <path
+                              d="M7 17L17 7M17 7H7M17 7V17"
+                              stroke="currentColor"
+                              stroke-width="2"
+                              stroke-linecap="round"
+                              stroke-linejoin="round"
+                            />
+                          </svg>
+                        </div>
+                      </div>
+                      <p class="supporting-text">
+                        Master the skills needed to create clear, effective
+                        technical documentation.
+                      </p>
+                    </div>
+                    <div class="categories">
+                      <span class="badge purple">Product</span>
+                      <span class="badge gray">Software Development</span>
+                    </div>
+                  </div>
+                </article>
+              </div>
+
+              <div class="pagination">
+                <button class="pagination-button">
+                  <svg
+                    class="arrow-left"
+                    width="20"
+                    height="20"
+                    viewBox="0 0 20 20"
+                    fill="none"
+                  >
+                    <path
+                      d="M15.8333 10H4.16667M4.16667 10L10 15.8333M4.16667 10L10 4.16667"
+                      stroke="currentColor"
+                      stroke-width="1.67"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    />
+                  </svg>
+                  Previous
+                </button>
+
+                <div class="pagination-numbers">
+                  <div class="pagination-number active">1</div>
+                  <div class="pagination-number">2</div>
+                  <div class="pagination-number">3</div>
+                  <div class="pagination-number">4</div>
+                  <div class="pagination-number">5</div>
+                  <div class="pagination-number">6</div>
+                  <div class="pagination-number">...</div>
+                </div>
+
+                <button class="pagination-button">
+                  Next
+                  <svg
+                    class="arrow-right"
+                    width="20"
+                    height="20"
+                    viewBox="0 0 20 20"
+                    fill="none"
+                  >
+                    <path
+                      d="M4.16667 10H15.8333M15.8333 10L10 4.16667M15.8333 10L10 15.8333"
+                      stroke="currentColor"
+                      stroke-width="1.67"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    />
+                  </svg>
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>

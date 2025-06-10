@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Information System</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <!-- Header with Dark Mode Toggle -->
+        <header class="header">
+            <h1>Student Information System</h1>
+            <div class="theme-toggle">
+                <label class="switch">
+                    <input type="checkbox" id="themeToggle">
+                    <span class="slider"></span>
+                </label>
+                <span class="theme-label">Dark Mode</span>
+            </div>
+        </header>
+
+        <!-- Student Information Form -->
+        <section class="form-section">
+            <h2>Student Registration Form</h2>
+            <form id="studentForm" class="student-form">
+                <div class="form-grid">
+                    <div class="form-group">
+                        <label for="name">Full Name *</label>
+                        <input type="text" id="name" name="name" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="age">Age *</label>
+                        <input type="number" id="age" name="age" min="16" max="100" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="email">Email *</label>
+                        <input type="email" id="email" name="email" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="gender">Gender</label>
+                        <select id="gender" name="gender">
+                            <option value="">Select Gender</option>
+                            <option value="male">Male</option>
+                            <option value="female">Female</option>
+                            <option value="other">Other</option>
+                            <option value="prefer-not-to-say">Prefer not to say</option>
+                        </select>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="course">Course Selection *</label>
+                        <select id="course" name="course" required>
+                            <option value="">Select Course</option>
+                            <option value="computer-science">Computer Science</option>
+                            <option value="engineering">Engineering</option>
+                            <option value="business">Business Administration</option>
+                            <option value="arts">Liberal Arts</option>
+                            <option value="medicine">Medicine</option>
+                            <option value="law">Law</option>
+                        </select>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="country">Country *</label>
+                        <select id="country" name="country" required>
+                            <option value="">Select Country</option>
+                            <option value="us">United States</option>
+                            <option value="uk">United Kingdom</option>
+                            <option value="ca">Canada</option>
+                            <option value="au">Australia</option>
+                            <option value="de">Germany</option>
+                            <option value="fr">France</option>
+                            <option value="in">India</option>
+                            <option value="jp">Japan</option>
+                        </select>
+                    </div>
+                </div>
+
+                <div class="form-group full-width">
+                    <label for="address">Address</label>
+                    <textarea id="address" name="address" rows="3" placeholder="Enter your full address"></textarea>
+                </div>
+
+                <div class="form-group full-width">
+                    <label>Subjects of Interest</label>
+                    <div class="checkbox-group">
+                        <label class="checkbox-label">
+                            <input type="checkbox" name="subjects" value="mathematics">
+                            <span>Mathematics</span>
+                        </label>
+                        <label class="checkbox-label">
+                            <input type="checkbox" name="subjects" value="physics">
+                            <span>Physics</span>
+                        </label>
+                        <label class="checkbox-label">
+                            <input type="checkbox" name="subjects" value="chemistry">
+                            <span>Chemistry</span>
+                        </label>
+                        <label class="checkbox-label">
+                            <input type="checkbox" name="subjects" value="biology">
+                            <span>Biology</span>
+                        </label>
+                        <label class="checkbox-label">
+                            <input type="checkbox" name="subjects" value="literature">
+                            <span>Literature</span>
+                        </label>
+                        <label class="checkbox-label">
+                            <input type="checkbox" name="subjects" value="history">
+                            <span>History</span>
+                        </label>
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <label for="resume">Resume (PDF only)</label>
+                    <input type="file" id="resume" name="resume" accept=".pdf">
+                </div>
+
+                <div class="form-group">
+                    <label for="profileImage">Profile Image</label>
+                    <input type="file" id="profileImage" name="profileImage" accept="image/*">
+                </div>
+
+                <div class="form-group full-width">
+                    <label for="skills">Skills (comma-separated)</label>
+                    <input type="text" id="skills" name="skills" placeholder="e.g., JavaScript, Python, Communication">
+                </div>
+
+                <div class="form-group full-width">
+                    <label for="bio">Short Bio</label>
+                    <textarea id="bio" name="bio" rows="4" placeholder="Tell us about yourself (max 500 characters)" maxlength="500"></textarea>
+                </div>
+
+                <button type="submit" class="submit-btn">Register Student</button>
+            </form>
+        </section>
+
+        <!-- Interactive Elements Section -->
+        <section class="interactive-section">
+            <h2>Interactive Elements</h2>
+            
+            <!-- Color Change Button -->
+            <div class="demo-item">
+                <h3>Color Change Button</h3>
+                <button id="colorChangeBtn" class="color-btn">Click to Change Color</button>
+            </div>
+
+            <!-- Highlight Toggle -->
+            <div class="demo-item">
+                <h3>Click to Highlight</h3>
+                <p id="highlightText" class="highlight-text">Click this text to toggle highlight</p>
+            </div>
+
+            <!-- Input Display -->
+            <div class="demo-item">
+                <h3>Input Display</h3>
+                <div class="input-demo">
+                    <input type="text" id="textInput" placeholder="Enter some text">
+                    <button id="displayBtn">Display Text</button>
+                </div>
+                <div id="displayOutput" class="output"></div>
+            </div>
+
+            <!-- Hover Element -->
+            <div class="demo-item">
+                <h3>Hover Logger</h3>
+                <div id="hoverElement" class="hover-box">
+                    Hover over this box (check console)
+                </div>
+            </div>
+        </section>
+
+        <!-- Grid Cards Section -->
+        <section class="cards-section">
+            <h2>Featured Courses</h2>
+            <div class="cards-grid">
+                <div class="card">
+                    <div class="card-header">
+                        <h3>Computer Science</h3>
+                    </div>
+                    <div class="card-body">
+                        <p>Learn programming, algorithms, and software development with hands-on projects.</p>
+                        <ul>
+                            <li>Programming Languages</li>
+                            <li>Data Structures</li>
+                            <li>Web Development</li>
+                        </ul>
+                    </div>
+                    <div class="card-footer">
+                        <button class="card-btn">Learn More</button>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <div class="card-header">
+                        <h3>Engineering</h3>
+                    </div>
+                    <div class="card-body">
+                        <p>Explore mechanical, electrical, and civil engineering principles and applications.</p>
+                        <ul>
+                            <li>Design Principles</li>
+                            <li>Problem Solving</li>
+                            <li>Project Management</li>
+                        </ul>
+                    </div>
+                    <div class="card-footer">
+                        <button class="card-btn">Learn More</button>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <div class="card-header">
+                        <h3>Business</h3>
+                    </div>
+                    <div class="card-body">
+                        <p>Master business strategy, finance, marketing, and leadership skills.</p>
+                        <ul>
+                            <li>Strategic Planning</li>
+                            <li>Financial Analysis</li>
+                            <li>Marketing Strategy</li>
+                        </ul>
+                    </div>
+                    <div class="card-footer">
+                        <button class="card-btn">Learn More</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

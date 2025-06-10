@@ -1,0 +1,308 @@
+/* Base styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    color: #333;
+    background-color: #f5f5f5;
+    padding-bottom: 50px;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.section {
+    margin-bottom: 40px;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 8px;
+}
+
+h1, h2 {
+    margin-bottom: 20px;
+}
+
+/* 1. Top-right positioned div */
+.top-right-corner {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    background-color: #ff6b6b;
+    color: white;
+    padding: 10px 15px;
+    border-radius: 5px;
+    z-index: 100;
+}
+
+/* 2. Card with soft shadow */
+.card {
+    background-color: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* 3. Different shadow styles */
+.shadow-container {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.shadow-box {
+    background-color: white;
+    padding: 20px;
+    border-radius: 8px;
+    width: 30%;
+    min-width: 200px;
+    text-align: center;
+}
+
+.sharp-shadow {
+    box-shadow: 5px 5px 0px rgba(0, 0, 0, 0.3);
+}
+
+.soft-shadow {
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+.top-left-shadow {
+    box-shadow: -8px -8px 15px rgba(0, 0, 0, 0.2);
+}
+
+/* 4. Hover shadow effect */
+.hover-shadow-box {
+    background-color: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: box-shadow 0.3s ease;
+    text-align: center;
+}
+
+.hover-shadow-box:hover {
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+}
+
+/* 5. Glowing text effect */
+.glowing-text {
+    color: #4e54c8;
+    font-size: 3rem;
+    text-align: center;
+    text-shadow: 0 0 5px rgba(78, 84, 200, 0.3),
+                 0 0 10px rgba(78, 84, 200, 0.2),
+                 0 0 15px rgba(78, 84, 200, 0.1);
+}
+
+/* 6. Rotated box */
+.rotated-box {
+    background-color: #4e54c8;
+    color: white;
+    padding: 20px;
+    width: 200px;
+    height: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transform: rotate(15deg);
+    margin: 40px auto;
+}
+
+/* 7. Scale on hover */
+.scale-container {
+    overflow: hidden;
+    width: 200px;
+    height: 200px;
+    margin: 0 auto;
+    border-radius: 8px;
+}
+
+.scale-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.3s ease;
+}
+
+.scale-image:hover {
+    transform: scale(1.2);
+}
+
+/* 8. Translated element */
+.translate-container {
+    height: 150px;
+    position: relative;
+    background-color: #f0f0f0;
+    border-radius: 8px;
+}
+
+.translated-box {
+    background-color: #ff6b6b;
+    color: white;
+    padding: 20px;
+    width: 150px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translateX(-30px) translateY(-30px);
+}
+
+/* 9. Button with hover effects */
+.hover-button {
+    background-color: #4e54c8;
+    color: white;
+    border: none;
+    padding: 12px 24px;
+    font-size: 16px;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, font-size 0.3s ease;
+    display: block;
+    margin: 0 auto;
+}
+
+.hover-button:hover {
+    background-color: #2c3086;
+    font-size: 18px;
+}
+
+/* 10. Expanding box */
+.expanding-box {
+    background-color: #4e54c8;
+    color: white;
+    padding: 20px;
+    width: 200px;
+    height: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto;
+    transition: width 0.3s ease, height 0.3s ease;
+}
+
+.expanding-box:hover {
+    width: 300px;
+    height: 150px;
+}
+
+/* 11. Card with upward movement */
+.upward-card {
+    background-color: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    text-align: center;
+}
+
+.upward-card:hover {
+    transform: translateY(-10px) scale(1.05);
+    box-shadow: 0 12px 20px rgba(0, 0, 0, 0.2);
+}
+
+/* 12. Sticky header */
+.sticky-header {
+    position: sticky;
+    top: 0;
+    background-color: #333;
+    color: white;
+    padding: 15px 20px;
+    z-index: 1000;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+/* 13. Different position values */
+.position-demo {
+    position: relative;
+    height: 300px;
+    background-color: #f0f0f0;
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+.fixed-icon {
+    position: fixed;
+    left: 20px;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: #ff6b6b;
+    color: white;
+    padding: 10px;
+    border-radius: 50%;
+    width: 80px;
+    height: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 100;
+}
+
+.relative-container {
+    position: relative;
+    padding: 20px;
+    height: 100%;
+}
+
+.absolute-image {
+    position: absolute;
+    bottom: 20px;
+    right: 20px;
+}
+
+/* Optional Image Grid */
+.image-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    gap: 15px;
+}
+
+.grid-item {
+    overflow: hidden;
+    border-radius: 8px;
+}
+
+.grid-item img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.3s ease;
+}
+
+.grid-item img:hover {
+    transform: scale(1.1);
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #333;
+    color: white;
+    margin-top: 50px;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .shadow-container {
+        flex-direction: column;
+    }
+    
+    .shadow-box {
+        width: 100%;
+    }
+    
+    .image-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
